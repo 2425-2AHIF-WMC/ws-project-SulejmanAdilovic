@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgba(51, 51, 51, 1);
+}
+
+header {
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #f4d03f;
+}
+
+#hero {
+    background: url("images/audi_bmw_mercedes.png") center -150px / cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 240px 20px;
+}
+
+#hero h1, #hero p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* damit der text leserlicher ist */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(244, 208, 63);
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(212, 172, 13, 1);
+}
+
+#introduction, #top-brands, #newest-modelle, .Übersicht  {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#introduction h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+
+.brands-preview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brands-preview img {
+    width: auto;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.brands-preview img:hover {
+    transform: scale(1.1);
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+#newest-modelle h2 {
+    text-align: center;
+
+}
+
+#newest-modelle img {
+    width: 683px;
+    height: auto;
+    margin: 20px;
+}
+
+#newest-modelle div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+
+}
+
+#newest-modelle div ul {
+    flex: 1;
+}
+
+#newest-modelle h3{
+    text-align: left;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+a:link {
+    color: blue; /* Standardfarbe für Links */
+    text-decoration: none;
+}
+
+#newest-modelle a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+#newest-modelle a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+#newest-modelle a:active {
+    color: red;
+}
+
+.Übersicht {
+    text-align: center;
+}
+
+.Übersicht img {
+    height: 150px;
+    width: auto;
+    margin: 20px;
+}
+
+.Audi {
+    text-align: center;
+}
