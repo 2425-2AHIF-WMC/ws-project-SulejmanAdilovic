@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png"
           href="images/website-logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
 
 
 </head>
@@ -17,29 +19,631 @@
         <div class="logo">Deutsche Autos</div>
         <ul class="menu">
             <li><a href="home.html">Home</a></li>
-            <li><a href="marken.html">Marken</a></li>
-            <li><a href="#history">Geschichte</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="marken.html" class="active">Marken</a></li>
+            <li><a href="history.html">Geschichte</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
 
         </ul>
     </nav>
 </header>
 
 <section class="Übersicht">
-    <h1>Entdecken Sie die Vielfalt und Innovation deutscher Automobilhersteller</h1>
+    <h1 class="Überschrift">Entdecken Sie die Vielfalt und Innovation deutscher Automobilhersteller</h1>
     <div class="brands-preview">
-        <img src="images/audi_logo.png" alt="Audi" title="Audi">
-        <img src="images/BMW.png" alt="BMW" title="BMW">
-        <img src="images/mercedes-logo.png" alt="Mercedes-Benz" title="Mercedes-Benz">
-        <img src="images/porsche-logo.png" alt="Porsche" title="Porsche">
-        <img src="images/vw-logo.png" alt="Volkswagen" title="Volkswagen">
+        <img src="images/audi_logo.png" alt="Audi" title="Audi" onclick="location.href='#Audi'" style="cursor: pointer;">
+        <img src="images/BMW.png" alt="BMW" title="BMW" onclick="location.href='#BMW'" style="cursor: pointer;">
+        <img src="images/mercedes-logo.png" alt="Mercedes-Benz" title="Mercedes-Benz" onclick="location.href='#Mercedes'" style="cursor: pointer;">
+        <img src="images/porsche-logo.png" alt="Porsche" title="Porsche" onclick="location.href='#Porsche'" style="cursor: pointer;">
+        <img src="images/vw-logo.png" alt="Volkswagen" title="Volkswagen" onclick="location.href='#VW'" style="cursor: pointer;">
     </div>
 </section>
-<section class="Audi">
+<section class="Audi" id="Audi">
     <h2>AUDI</h2>
+    <div class="anfang">
+    <img src="images/audi_logo.png" alt="Audi" title="Audi">
+        <ul>
+        <p><strong>Gründung:</strong> 1909 von August Horch.</p>
+        <p><strong>Wofür bekannt:</strong> Premiumfahrzeuge mit innovativer Technik, z. B. quattro-Allradantrieb.</p>
+        <p><strong>Beliebte Modelle:</strong> Audi A4, Audi Q7, Audi RS7.</p>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+    <div id="carouselAudiA4" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/a4-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audi A4</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/a4-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/a4-3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/a4-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/a4-5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/a4-6.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAudiA4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAudiA4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselAudiQ7" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/q7-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audi Q7</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/q7-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/q7-3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/q7-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/q7-5.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAudiQ7" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAudiQ7" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselAudiRS7" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/rs7-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Audi RS7</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/rs7-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/rs7-3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/rs7-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/rs7-5.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAudiRS7" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAudiRS7" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+    <h3>Audi-Technologien</h3>
+    <div class="technologie">
+        <div id="quattro-text">
+        <h4>Der Quattro-Antrieb</h4>
+        <p>Maßgeschneidert für jedes Modell bietet Audi den quattro-Antrieb in unterschiedlichen Ausführungen an.
+            Bei den kompakten Baureihen mit quer eingebautem Motor ist eine Lamellenkupplung mit hydraulischer
+            Betätigung und elektronischer Regelung an der Hinterachse montiert. Beim Mittelmotor-Sportwagen R8
+            sitzt die Lamellenkupplung an der Vorderachse. Diese aktiven Systeme verteilen die Kräfte je nach
+            Fahrsituation variabel auf beide Achsen.
+            <p></p>
+            Das selbstsperrende Mittendifferenzial, das in vielen Audi-Modellen mit vorn eingebautem Längsmotor zum Einsatz kommt,
+            ist ein rein mechanisches Planetengetriebe. Im Normalfall schickt es die Antriebsmomente im Verhältnis 40:60 an
+            Vorder- und Hinterachse.
+            <p></p>
+            Für einige Topmotorisierungen steht das Sportdifferenzial an der Hinterachse zur Wahl. Es kann die Momente
+            mittels zweier Überlagerungsstufen mit elektrohydraulischen Lamellenkupplungen aktiv zwischen den Hinterrädern
+            verteilen. Im Extremfall gelangt fast das komplette Drehmoment auf ein Rad - das System drückt das Auto in die
+            Kurve hinein, womit es Untersteuern bereits im Ansatz eliminiert.</p>
+        </div>
+        <img id="quattro-foto" src="images/quattro.png" alt="Quattro" title="Quattro">
+    </div>
+
+    <div class="technologie">
+        <img class="matrix-foto" src="images/matrix.png" alt="Matrix" title="Matrix">
+        <div class="matrix-text">
+            <h4>Matrix-Funktionen</h4>
+        <p>Die LED-Matrix-Technologie kombiniert ein Kamerasystem mit LED-Lichtquellen und präziser Optik
+            für eine hochadaptive Lichtverteilung. Werden andere Fahrzeuge erkannt, blendet das System
+            selektiv nur den Bereich des erkannten Fahrzeugs aus, in den restlichen Segmenten bleibt das
+            Fernlicht aktiv.</p>
+         </div>
+    </div>
 </section>
 
+<section class="BMW" id="BMW">
+    <h2>BMW</h2>
+    <div class="anfang">
+        <img src="images/BMW.png" alt="Audi" title="Audi">
+        <ul>
+            <p><strong>Gründung:</strong> 1916 in München, zunächst Flugzeugmotorenhersteller.</p>
+            <p><strong>Wofür bekannt:</strong> Sportliche Fahrzeuge, Qualität und „Freude am Fahren“.</p>
+            <p><strong>Beliebte Modelle:</strong> BMW 3er, BMW X5, BMW M4.</p>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+    <div id="carouselBmw3er" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/3er-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-bmw d-none d-md-block">
+                    <h5>BMW 3er</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/3er-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3er-3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3er-4.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBmw3er" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBmw3er" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselBmwX5" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/x5-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption-bmw d-none d-md-block">
+                    <h5>BMW X5</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/x5-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/x5-3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/x5-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/x5-5.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBmwX5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBmwX5" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+        <div id="carouselBmw4" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/m4-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption-bmw d-none d-md-block">
+                        <h5>BMW M4</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/m4-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/m4-3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/m4-4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/m4-5.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBmw4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBmw4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>BMW-Technologien</h3>
+    <div class="technologie">
+        <div id="iDrive-text">
+            <h4>BMWs iDrive-System</h4>
+            <p>BMW iDrive ist das innovative Infotainment-System, das eine einfache Steuerung
+                von Navigation, Kommunikation und Unterhaltung ermöglicht. Mit seinem intuitiven
+                Dreh- und Drückregler sowie der klaren Benutzeroberfläche sorgt iDrive für ein
+                komfortables und vernetztes Fahrerlebnis.</p>
+        </div>
+        <img id="iDrive-foto" src="images/iDrive.png" alt="iDrive" title="iDrive">
+    </div>
+
+    <div class="technologie">
+        <img class="digitalKey-foto" src="images/digitalKey.png" alt="BMW Digital Key" title="BMW Digital Key">
+        <div class="digitalKey-text">
+            <h4>BMW Digital Key</h4>
+            <p>Der BMW Digital Key ermöglicht es, dein Fahrzeug mit deinem Smartphone zu entsperren
+                und zu starten, ohne den klassischen Schlüssel dabei zu haben. Über die BMW App kannst
+                du dein Auto einfach per Bluetooth verbinden. Der Digital Key funktioniert auch, wenn
+                dein Smartphone offline ist, und bietet zusätzliche Sicherheitsfunktionen wie die Möglichkeit,
+                die Zugriffsrechte für andere Nutzer zu verwalten. So wird das Fahrzeug noch komfortabler
+                und sicherer zu bedienen.</p>
+        </div>
+    </div>
+</section>
+
+<section class="Mercedes" id="Mercedes">
+    <h2>MERCEDES</h2>
+    <div class="anfang">
+        <img src="images/mercedes-logo.png" alt="Mercedes" title="Mercedes">
+        <ul>
+            <p><strong>Gründung:</strong> 1926 durch die Fusion von Benz & Cie. und Daimler-Motoren-Gesellschaft.</p>
+            <p><strong>Wofür bekannt:</strong> Luxusfahrzeuge und Innovationen wie der 4MATIC-Allradantrieb.</p>
+            <p><strong>Beliebte Modelle:</strong> Mercedes C-Klasse, Mercedes GLE, Mercedes S-Klasse.</p>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+        <div id="carouselMercedesC" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/c-klasse-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mercedes C-Klasse</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/c-klasse-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/c-klasse-3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/c-klasse-4.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMercedesC" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMercedesC" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="carouselMercedesGLE" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/gle-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mercedes GLE</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gle-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gle-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMercedesGLE" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMercedesGLE" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="carouselMercedesS" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/gt-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mercedes GT AMG</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gt-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gt-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMercedesS" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMercedesS" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Mercedes-Technologien</h3>
+    <div class="technologie">
+        <div id="matic-text">
+            <h4>Der 4MATIC-Allradantrieb</h4>
+            <p>Der 4MATIC-Allradantrieb von Mercedes sorgt für optimale Traktion bei allen Straßenverhältnissen.
+                Das System verteilt die Antriebskraft variabel zwischen Vorder- und Hinterachse,
+                wodurch ein sicheres und stabiles Fahrerlebnis garantiert wird. Dank moderner Sensorik
+                wird die Kraft je nach Fahrsituation automatisch angepasst, um maximalen Grip zu bieten.</p>
+        </div>
+        <img id="matic-foto" src="images/4matic.png" alt="4MATIC" title="4MATIC">
+    </div>
+
+    <div class="technologie">
+        <img class="mbux-foto" src="images/mbux.png" alt="MBUX" title="MBUX">
+        <div class="mbux-text">
+            <h4>MBUX (Mercedes-Benz User Experience)</h4>
+            <p>MBUX ist das intuitive Multimediasystem von Mercedes-Benz, das auf Sprachsteuerung,
+                Touchscreens und Künstlicher Intelligenz basiert. Durch die einfache Bedienung
+                und personalisierte Einstellungen wird jede Fahrt komfortabler und vernetzter.
+                Das System lernt kontinuierlich die Vorlieben des Fahrers und passt sich daran an,
+                um ein individuelles Fahrerlebnis zu schaffen.</p>
+        </div>
+    </div>
+</section>
+
+<section class="Porsche" id="Porsche">
+    <h2>Porsche</h2>
+    <div class="anfang">
+        <img src="images/porsche-logo.png" alt="Porsche" title="Porsche">
+        <ul>
+            <p><strong>Gründung:</strong> 1931 in Stuttgart von Ferdinand Porsche.</p>
+            <p><strong>Wofür bekannt:</strong> Hochleistungs-Sportwagen, Qualität und innovatives Design.</p>
+            <p><strong>Beliebte Modelle:</strong> Porsche 911, Porsche Cayenne, Porsche Taycan.</p>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+    <div id="carouselPorscheTaycan" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/taycan-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Porsche Cayenne</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/taycan-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/taycan-3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPorscheTaycan" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPorscheTaycan" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div id="carouselPorscheCayenne" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cayenne-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Porsche Cayenne</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/cayenne-2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/cayenne-3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPorscheCayenne" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPorscheCayenne" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+        <div id="carouselPorsche911" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/911-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Porsche 911</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/911-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/911-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPorsche911" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPorsche911" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <h3>Porsche-Technologien</h3>
+    <div class="technologie">
+        <div id="porsche-ePerformance-text">
+            <h4>Porsche ePerformance</h4>
+            <p>Porsche ePerformance kombiniert leistungsstarke Elektroantriebe mit intelligenter Batterietechnologie,
+                um beeindruckende Leistung und Nachhaltigkeit zu vereinen. Mit der 800-Volt-Technologie werden kürzere
+                Ladezeiten und eine höhere Effizienz erreicht. Dieses System zeigt die Zukunft der sportlichen Elektromobilität.</p>
+        </div>
+        <img id="porsche-ePerformance-foto" src="images/ePerformance.png" alt="Porsche ePerformance" title="Porsche ePerformance">
+    </div>
+
+    <div class="technologie">
+        <img id="porsche-ptm-foto" src="images/ptm.png" alt="Porsche Traction Management" title="Porsche Traction Management">
+        <div id="porsche-ptm-text">
+            <h4>Porsche Traction Management (PTM)</h4>
+            <p>Porsche Traction Management ist ein innovatives Allradsystem, das für optimale Traktion und Fahrstabilität
+                sorgt. Egal ob auf nasser Fahrbahn oder bei hohen Kurvengeschwindigkeiten, PTM verteilt die Antriebskraft
+                intelligent zwischen Vorder- und Hinterachse, um maximale Leistung und Sicherheit zu gewährleisten.</p>
+        </div>
+    </div>
+</section>
+
+<section class="VW" id="VW">
+    <h2>Volkswagen (VW)</h2>
+    <div class="anfang">
+        <img src="images/vw-logo.png" alt="Volkswagen" title="Volkswagen">
+        <ul>
+            <p><strong>Gründung:</strong> 1937 in Wolfsburg, Deutschland.</p>
+            <p><strong>Wofür bekannt:</strong> Erschwingliche und zuverlässige Fahrzeuge für den Alltag.</p>
+            <p><strong>Beliebte Modelle:</strong> VW Golf, VW Touareg, VW ID.4.</p>
+        </ul>
+    </div>
+
+    <div class="carousel-container">
+        <div id="carouselVwGolf" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/golf-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Volkswagen Golf</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/golf-2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVwGolf" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVwGolf" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="carouselVwTouareg" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/touareg-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Volkswagen Touareg</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/touareg-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/touareg-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVwTouareg" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVwTouareg" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="carouselVwArteon" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/arteon-1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Volkswagen Arteon</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/arteon-2.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVwArteon" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVwArteon" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <h3>Volkswagen-Technologien</h3>
+    <div class="technologie">
+        <div id="vw-weConnect-text">
+            <h4>VW We Connect</h4>
+            <p>VW We Connect ist eine digitale Plattform, die eine nahtlose Verbindung zwischen Fahrzeug und Smartphone ermöglicht.
+                Mit Funktionen wie Fahrzeugstatus in Echtzeit, Online-Diebstahlschutz und automatischen Software-Updates wird der
+                Alltag einfacher und vernetzter. So bietet We Connect moderne Mobilität auf höchstem Niveau.</p>
+        </div>
+        <img id="vw-weConnect-foto" src="images/weConnect.png" alt="VW We Connect" title="VW We Connect">
+    </div>
+
+    <div class="technologie">
+        <img id="vw-iqLight-foto" src="images/iqLight.png" alt="VW IQ.LIGHT" title="VW IQ.LIGHT">
+        <div id="vw-iqLight-text">
+            <h4>VW IQ.LIGHT</h4>
+            <p>IQ.LIGHT ist eine innovative LED-Matrixscheinwerfer-Technologie, die für optimale Sicht und Sicherheit sorgt.
+                Die intelligenten Scheinwerfer passen sich automatisch den Licht- und Fahrbedingungen an und verhindern,
+                dass andere Verkehrsteilnehmer geblendet werden.</p>
+        </div>
+    </div>
+</section>
+
+
 <footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <p>© 2025 Deutsche Autos. Alle Rechte vorbehalten.</p>
 </footer>
 </body>

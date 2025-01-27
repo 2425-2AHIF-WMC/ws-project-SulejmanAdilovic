@@ -1,204 +1,468 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: rgba(51, 51, 51, 1);
+    font-family: 'Arial', sans-serif; /* Schriftart für die ganze Seite */
+    margin: 0; /* Kein äußerer Abstand */
+    padding: 0; /* Kein innerer Abstand */
+    color: rgba(51, 51, 51, 1); /* Dunkle Textfarbe */
 }
 
 header {
-    background-color: rgba(51, 51, 51, 1);
-    color: white;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background-color: rgba(51, 51, 51, 1); /* Dunkler Hintergrund für den Header */
+    color: white; /* Weiße Schrift */
+    padding: 10px 20px; /* Innenabstand oben/unten: 10px, rechts/links: 20px */
+    position: sticky; /* Der Header bleibt oben kleben, wenn man scrollt */
+    top: 0; /* Positioniert den Header oben */
+    z-index: 1000; /* Priorität für die Darstellung */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Elemente nebeneinander anordnen */
+    justify-content: space-between; /* Abstand zwischen den Elementen */
+    align-items: center; /* Elemente vertikal zentrieren */
 }
 
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.5em; /* Schriftgröße der Logo-Überschrift */
+    font-weight: bold; /* Fette Schrift */
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; /* Keine Punkte oder Zahlen bei der Liste */
+    display: flex; /* Menü nebeneinander anzeigen */
+    gap: 20px; /* Abstand zwischen den Menüpunkten */
 }
 
 .menu li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    color: white; /* Weiße Schrift für Links */
+    text-decoration: none; /* Unterstreichung entfernen */
+    transition: color 0.3s; /* Weicher Übergang bei Farbänderungen */
 }
 
 .menu li a:hover {
-    color: #f4d03f;
+    color: #f4d03f; /* Gelbe Farbe, wenn man mit der Maus darüberfährt */
 }
 
 #hero {
-    background: url("images/audi_bmw_mercedes.png") center -150px / cover no-repeat;
-    color: white;
-    text-align: center;
-    padding: 240px 20px;
+    background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #ffffff 100%), /* Verlauf, um den Text lesbar zu machen */
+            url("images/porsche-drift.png") center -150px / cover no-repeat; /* Hintergrundbild einstellen */
+    color: white; /* Weiße Schrift für den Text */
+    text-align: center; /* Text zentrieren */
+    padding: 280px 20px; /* Abstand innen: oben/unten 280px, rechts/links 20px */
 }
 
 #hero h1, #hero p {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* damit der text leserlicher ist */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1); /* Textschatten für bessere Lesbarkeit */
 }
 
 .hero-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Große Überschrift */
+    margin-bottom: 10px; /* Abstand nach unten */
 }
 
 .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Schriftgröße für den Text */
+    margin-bottom: 20px; /* Abstand nach unten */
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(244, 208, 63);
-    color: rgba(51, 51, 51, 1);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    display: inline-block; /* Als Block innerhalb einer Zeile */
+    padding: 10px 20px; /* Innenabstand */
+    background-color: rgb(244, 208, 63); /* Gelber Hintergrund */
+    color: rgba(51, 51, 51, 1); /* Dunkle Schrift */
+    text-decoration: none; /* Keine Unterstreichung */
+    font-weight: bold; /* Fette Schrift */
+    border-radius: 5px; /* Runde Ecken */
+    transition: background-color 0.3s; /* Weicher Übergang bei Farbänderungen */
 }
 
 .cta-button:hover {
-    background-color: rgba(212, 172, 13, 1);
+    background-color: rgba(212, 172, 13, 1); /* Dunkleres Gelb beim Überfahren */
 }
 
-#introduction, #top-brands, #newest-modelle, .Übersicht  {
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#introduction {
+    scroll-margin-top: 80px; /* Abstand beim Scrollen berücksichtigen */
+}
+
+#introduction, #top-brands, #newest-modelle, .Übersicht, .Audi, .BMW, .Mercedes, .Porsche, .VW {
+    padding: 10px; /* Innenabstand */
+    text-align: center; /* Text zentrieren */
+    border-radius: 10px; /* Runde Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten für 3D-Effekt */
 }
 
 #introduction h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Große Schrift für die Überschrift */
+    color: #333; /* Dunkle Farbe */
+    margin-bottom: 20px; /* Abstand nach unten */
 }
 
 #introduction p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1.2rem; /* Lesbare Schriftgröße */
+    color: #555; /* Hellere Schriftfarbe */
+    line-height: 1.6; /* Zeilenabstand */
+    max-width: 800px; /* Maximale Breite des Textes */
+    margin: 0 auto; /* Zentriert den Text */
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 1);
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 0.9em;
-    margin-top: 20px;
+    background-color: rgba(51, 51, 51, 1); /* Dunkler Hintergrund */
+    color: white; /* Weiße Schrift */
+    text-align: center; /* Text zentrieren */
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 0.9em; /* Kleinere Schriftgröße */
+    margin-top: 20px; /* Abstand nach oben */
 }
 
-
 .brands-preview {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Elemente nebeneinander */
+    justify-content: center; /* Zentriert die Inhalte */
+    gap: 20px; /* Abstand zwischen Bildern */
+    flex-wrap: wrap; /* Umbrüche, wenn nötig */
 }
 
 .brands-preview img {
-    width: auto;
-    height: 100px;
-    transition: transform 0.3s ease;
+    width: auto; /* Automatische Breite */
+    height: 100px; /* Feste Höhe */
+    transition: transform 0.3s ease; /* Weicher Übergang bei Veränderung */
 }
 
 .brands-preview img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Vergrößern, wenn man darüberfährt */
 }
 
-
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    margin: 20px;
+    display: inline-block; /* Block innerhalb einer Zeile */
+    padding: 10px 20px; /* Innenabstand */
+    background-color: #333; /* Dunkler Hintergrund */
+    color: white; /* Weiße Schrift */
+    text-decoration: none; /* Keine Unterstreichung */
+    border-radius: 5px; /* Runde Ecken */
+    text-align: center; /* Text zentrieren */
+    margin: 20px; /* Abstand außen */
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #555; /* Hellere Hintergrundfarbe */
 }
 
 #newest-modelle h2 {
-    text-align: center;
-
+    text-align: center; /* Zentriert die Überschrift */
 }
 
 #newest-modelle img {
-    width: 683px;
-    height: auto;
-    margin: 20px;
+    width: 683px; /* Breite der Bilder */
+    height: auto; /* Automatische Höhe */
+    margin: 20px; /* Abstand außen */
+    border: 2px solid black; /* Schwarzer Rahmen */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Schatteneffekt */
 }
 
 #newest-modelle div {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 20px;
-
+    display: flex; /* Flexbox für Layout */
+    align-items: center; /* Vertikale Zentrierung */
+    text-align: left; /* Text linksbündig */
+    gap: 20px; /* Abstand zwischen Elementen */
 }
 
 #newest-modelle div ul {
-    flex: 1;
+    flex: 1; /* Liste nimmt verfügbaren Platz ein */
 }
 
-#newest-modelle h3{
-    text-align: left;
-    margin: 20px;
-    margin-top: 50px;
+#newest-modelle h3 {
+    text-align: left; /* Überschrift linksbündig */
+    margin: 20px; /* Abstand außen */
+    margin-top: 50px; /* Größerer Abstand oben */
 }
 
 a:link {
     color: blue; /* Standardfarbe für Links */
-    text-decoration: none;
+    text-decoration: none; /* Keine Unterstreichung */
 }
 
 #newest-modelle a:visited {
-    color: purple;
-    text-decoration: none;
+    color: purple; /* Farbe für besuchte Links */
+    text-decoration: none; /* Keine Unterstreichung */
 }
 
 #newest-modelle a:hover {
-    color: darkblue;
-    text-decoration: underline;
+    color: darkblue; /* Farbe bei Hover */
+    text-decoration: underline; /* Unterstreichen bei Hover */
 }
 
 #newest-modelle a:active {
-    color: red;
+    color: red; /* Farbe bei aktivem Link */
 }
 
+/* Abschnitt für Marken */
+
 .Übersicht {
-    text-align: center;
+    text-align: center; /* Zentriert die Texte */
+}
+
+.Überschrift {
+    border: 2px solid gray; /* Grauer Rahmen */
+    padding: 10px; /* Innenabstand */
+    border-radius: 5px; /* Runde Ecken */
 }
 
 .Übersicht img {
-    height: 150px;
-    width: auto;
-    margin: 20px;
+    height: 150px; /* Höhe der Bilder */
+    width: auto; /* Automatische Breite */
+    margin: 20px; /* Abstand außen */
 }
 
-.Audi {
-    text-align: center;
+.anfang img {
+    height: 150px; /* Höhe der Anfangsbilder */
+    width: auto; /* Automatische Breite */
+    margin: 20px; /* Abstand außen */
 }
+
+.anfang {
+    display: flex; /* Flexbox-Layout */
+    align-items: center; /* Vertikale Zentrierung */
+    text-align: left; /* Text linksbündig */
+    gap: 20px; /* Abstand zwischen Elementen */
+}
+
+.carousel-caption h5 {
+    color: black; /* Farbe der Überschrift in der Karussell-Beschriftung */
+}
+
+.carousel-caption-bmw h5, .carousel-caption-mercedes h5 {
+    color: black; /* Farbe der Überschriften für BMW und Mercedes */
+}
+
+.carousel {
+    width: 30rem; /* Breite des Karussells */
+}
+
+.carousel-container {
+    display: flex; /* Flexbox für Layout */
+    justify-content: space-between; /* Abstand zwischen Elementen */
+    align-items: center; /* Vertikale Zentrierung */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Schwarzer Hintergrund für Navigationspfeile */
+    border-radius: 50%; /* Runde Form */
+}
+
+#quattro-foto {
+    height: 516px; /* Höhe des Quattro-Fotos */
+}
+
+.technologie {
+    display: flex; /* Flexbox für Layout */
+    justify-content: center; /* Zentrierung horizontal */
+    align-items: center; /* Zentrierung vertikal */
+}
+
+#quattro-text {
+    width: 436px; /* Breite des Textblocks */
+    height: 656px; /* Höhe des Textblocks */
+    text-align: left; /* Text linksbündig */
+}
+
+.BMW h2, .BMW h3, .Audi h2, .Audi h3, .Mercedes h2, .Mercedes h3, .Porsche h2, .Porsche h3, .VW h2, .VW h3 {
+    margin: 50px; /* Abstand außen */
+    text-align: center; /* Zentrierung der Überschriften */
+}
+
+.matrix-foto {
+    width: 436px; /* Breite des Matrix-Fotos */
+}
+
+#iDrive-text, #iDrive-foto, .digitalKey-text, .digitalKey-foto, .matrix-text, .mbux-text, #porsche-ePerformance-foto, #porsche-ptm-text, #vw-iqLight-text, #vw-weConnect-foto, #vw-weConnect-text {
+    width: 436px; /* Breite der Boxen */
+    text-align: left; /* Text linksbündig */
+    margin-left: 50px; /* Abstand von links */
+}
+
+#iDrive-foto, .digitalKey-foto, #matic-foto, .mbux-foto, #vw-iqLight-foto {
+    width: 500px; /* Breite der Bilder */
+    margin-top: 100px; /* Abstand oben */
+    margin-bottom: 50px; /* Abstand unten */
+}
+
+#matic-text {
+    width: 600px; /* Breiterer Bereich für Text */
+    text-align: left; /* Text linksbündig */
+    margin-right: 50px; /* Abstand von rechts */
+}
+
+#porsche-ptm-foto {
+    width: 500px; /* Breite des Bildes */
+    margin-top: 100px; /* Abstand oben */
+    margin-bottom: 50px; /* Abstand unten */
+}
+
+#porsche-ePerformance-text {
+    width: 500px; /* Textbreite */
+    text-align: left; /* Text linksbündig */
+    margin-right: 50px; /* Abstand von rechts */
+}
+
+/* Hauptstil für Webseite */
+body, html {
+    margin: 0; /* Kein Rand */
+    padding: 0; /* Kein Abstand */
+    font-family: 'Arial', sans-serif; /* Schriftart */
+    color: #333; /* Textfarbe dunkelgrau */
+}
+
+/* Kopfbereich */
+header {
+    background-color: #333; /* Hintergrundfarbe dunkel */
+    color: white; /* Textfarbe weiß */
+    padding: 10px 20px; /* Abstand innen */
+    position: sticky; /* Immer oben kleben */
+    top: 0; /* Kleben bei oberster Position */
+    z-index: 1000; /* Priorität beim Stapeln */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schatten unten */
+}
+
+nav {
+    display: flex; /* Elemente nebeneinander */
+    justify-content: space-between; /* Abstand zwischen Elementen */
+    align-items: center; /* Zentrieren vertikal */
+}
+
+.logo {
+    font-size: 1.8rem; /* Schriftgröße */
+    font-weight: bold; /* Fettgedruckt */
+}
+
+.menu {
+    list-style: none; /* Keine Punkte oder Zahlen */
+    display: flex; /* Elemente nebeneinander */
+    gap: 20px; /* Abstand zwischen Menü-Punkten */
+}
+
+.menu li a {
+    color: white; /* Textfarbe weiß */
+    text-decoration: none; /* Kein Unterstrich */
+    font-size: 1rem; /* Schriftgröße */
+    transition: color 0.3s; /* Farbe langsam ändern */
+}
+
+.menu li a:hover,
+.menu li a.active {
+    color: #f4d03f; /* Gelbe Farbe bei Hover oder aktivem Link */
+}
+
+/* Heldensektion */
+#history-hero {
+    background:
+            linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #ffffff 100%),
+            url('images/geschichte-banner.png') center/cover no-repeat; /* Hintergrundbild mit Verlauf */
+    color: white; /* Textfarbe weiß */
+    text-align: center; /* Text zentriert */
+    padding: 260px 20px; /* Abstand innen */
+    position: relative; /* Für spätere Platzierung */
+}
+
+#history-hero h1 {
+    font-size: 3rem; /* Schriftgröße Überschrift */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Schatten für Text */
+    margin-bottom: 10px; /* Abstand unten */
+}
+
+#history-hero p {
+    font-size: 1.5rem; /* Schriftgröße Text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Schatten */
+    margin-bottom: 20px; /* Abstand unten */
+}
+
+.history-hero-content {
+    position: relative; /* Positionierbar */
+    z-index: 2; /* Überlappend anzeigen */
+}
+
+/* Allgemeiner Container */
+.container {
+    max-width: 1200px; /* Maximale Breite */
+    margin: 0 auto; /* Zentriert */
+    padding: 20px; /* Abstand innen */
+}
+
+.container h2 {
+    font-size: 2.5rem; /* Schriftgröße Überschrift */
+    margin-bottom: 20px; /* Abstand unten */
+    text-align: center; /* Zentriert */
+    color: #333; /* Dunkelgrau */
+}
+
+.container p {
+    line-height: 1.6; /* Abstand zwischen Zeilen */
+    font-size: 1.2rem; /* Schriftgröße Text */
+    color: #555; /* Graue Farbe */
+    text-align: center; /* Zentriert */
+}
+
+/* Historie der Marken */
+.brand-history {
+    display: grid; /* Gitter-Layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible Spalten */
+    gap: 20px; /* Abstand zwischen Boxen */
+    margin-top: 30px; /* Abstand nach oben */
+}
+
+.brand {
+    background-color: #f9f9f9; /* Heller Hintergrund */
+    padding: 20px; /* Abstand innen */
+    border-radius: 10px; /* Runde Ecken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    text-align: center; /* Zentrierter Text */
+}
+
+.brand img {
+    width: 150px; /* Breite der Bilder */
+    height: auto; /* Höhe automatisch */
+    margin-bottom: 15px; /* Abstand unten */
+}
+
+.brand h3 {
+    font-size: 1.8rem; /* Schriftgröße Überschrift */
+    margin-bottom: 10px; /* Abstand unten */
+}
+
+.brand p {
+    font-size: 1rem; /* Schriftgröße Text */
+    margin-bottom: 15px; /* Abstand unten */
+    text-align: justify; /* Text ausrichten */
+}
+
+.brand {
+    width: 100%; /* Volle Breite */
+    border-radius: 5px; /* Runde Ecken */
+    margin-top: 10px; /* Abstand nach oben */
+    transition: transform 0.3s ease; /* Langsames Zoomen */
+}
+
+.brand:hover {
+    transform: scale(1.05); /* Leicht vergrößern */
+}
+
+.container {
+    margin-top: 40px; /* Abstand nach oben */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fill {
+    height: 30px;
+}
+
